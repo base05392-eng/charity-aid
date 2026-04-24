@@ -21,21 +21,14 @@
       ]
     },
     "plugins": [
-  "expo-camera",
-  "expo-local-authentication"
-],
+      [
+        "expo-camera",
         {
           "cameraPermission": "Allow Charity Aid to access your camera to scan Civil ID cards."
         }
       ],
       "expo-secure-store",
-      "expo-local-authentication",
-      [
-        "expo-sqlite",
-        {
-          "enableFTS": false
-        }
-      ]
+      "expo-local-authentication"
     ],
     "extra": {
       "eas": {

@@ -29,4 +29,4 @@ jobs:
         run: npm install
 
       - name: Build Android APK
-        run: eas build --platform android --profile development --non-interactive
+       run: eas build --platform android --profile preview --non-interactive

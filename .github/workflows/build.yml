@@ -1,4 +1,4 @@
-name: Build Android APK
+name: EAS Build
 
 on:
   push:
@@ -10,18 +10,18 @@ jobs:
     name: Build Android APK
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
-        
 
-      - name: Setup EAS
+      - name: Setup Expo
         uses: expo/expo-github-action@v8
         with:
+          expo-version: latest
           eas-version: latest
           token: ${{ secrets.EXPO_TOKEN }}
 
@@ -29,4 +29,4 @@ jobs:
         run: npm install
 
       - name: Build Android APK
-       run: eas build --platform android --profile preview --non-interactive
+        run: eas build --platform android --profile preview --non-interactive

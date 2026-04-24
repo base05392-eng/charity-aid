@@ -21,8 +21,9 @@
       ]
     },
     "plugins": [
-      [
-        "expo-camera",
+  "expo-camera",
+  "expo-local-authentication"
+],
         {
           "cameraPermission": "Allow Charity Aid to access your camera to scan Civil ID cards."
         }

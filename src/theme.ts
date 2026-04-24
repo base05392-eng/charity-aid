@@ -1,0 +1,15 @@
+export const COLORS = {
+  primary: '#0F6E56',
+  header: '#085041',
+  accent: '#5DCAA5',
+  background: '#F5F7F6',
+  surface: '#FFFFFF',
+  textPrimary: '#1A1A1A',
+  textSecondary: '#666666',
+  border: '#E0E0E0',
+  error: '#C0392B',
+  eligible: { bg: '#E1F5EE', border: '#9FE1CB', text: '#0A5E3F' },
+  blocked: { bg: '#FCEBEB', border: '#F7C1C1', text: '#8B1A1A' },
+  newStatus: { bg: '#FAEEDA', border: '#FAC775', text: '#7A5A00' },
+  blacklisted: { bg: '#5C1A1A', border: '#3D0000', text: '#FFFFFF' },
+};

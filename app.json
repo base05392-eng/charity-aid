@@ -21,15 +21,23 @@
       ]
     },
     "plugins": [
-      [
-        "expo-camera",
-        {
-          "cameraPermission": "Allow Charity Aid to access your camera to scan Civil ID cards."
-        }
-      ],
-      "expo-secure-store",
-      "expo-local-authentication"
-    ],
+  [
+    "expo-build-properties",
+    {
+      "android": {
+        "kotlinVersion": "1.9.25"
+      }
+    }
+  ],
+  [
+    "expo-camera",
+    {
+      "cameraPermission": "Allow Charity Aid to access your camera to scan Civil ID cards."
+    }
+  ],
+  "expo-secure-store",
+  "expo-local-authentication"
+],
     "extra": {
       "eas": {
         "projectId": "ec2974f3-f8ab-4e43-bf8c-5e8007943953"
